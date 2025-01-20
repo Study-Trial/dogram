@@ -1,0 +1,135 @@
+
+html {
+    /* position: relative; */
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+body {
+    background: url(../images/constellation.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2 {
+    margin: 0px;
+    font-size: 5rem;
+    text-align: center;
+    color: blanchedalmond;
+}
+.gallery--item_image {
+    display:block;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+}
+.gallery--item_image1 {
+    position: relative;
+    display:block;
+    width: 12rem;
+    height: 12rem;
+    font-size: 0;
+    object-fit: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.gallery--item_title1 {
+    display: block;
+    text-align: center;
+    width: 4.8rem;
+    margin-left: 3.6rem;
+    background-color: blanchedalmond;
+}
+.gallery--item1 {
+    border-radius: 100px;
+    width: 12rem;
+    height: 12rem;
+    margin: 10px 20vw 25px 20vw;
+}
+
+.gallery{
+    list-style: none;
+    overflow: scroll;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0px;
+}
+.gallery--item:hover {
+    filter: blur(5px);
+}
+.gallery--item1:hover {
+    filter: blur(5px);
+}
+.gallery--item_title {
+    display: block;
+    width: 7rem;
+    font-size: 2.5 rem;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.gallery--item {
+    border: 3px solid blanchedalmond;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 7rem;
+    margin: 5px 0 5px 0;
+}
+@media screen and (min-width: 480px) {
+
+    .gallery--item1 {
+        position: fixed;
+        width: 20rem;
+        height: 20rem;
+        margin: 0 0 0 90vw;
+    }
+    .gallery--item_image1 {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+    }
+    .gallery--item_title1 {
+        position: absolute;
+        width: 8rem;
+        margin-left: 6rem;
+        margin-top: 20rem;
+    }
+    .gallery--item {
+        justify-content:space-around;
+        width: 7rem;
+        overflow:hidden;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .gallery {
+        display: flex;
+        width: 40vw;
+        height: 70vh;
+    }
+}
+@media screen and (min-width: 850px) {
+
+    .gallery--item1 {
+        width: 40rem;
+        height: 25rem;
+        margin: 1rem 0 0 90vw;
+    }
+    .gallery--item_image1 {
+        width: 40rem;
+        height: 25rem;
+    }
+    .gallery--item_title1 {
+        position: absolute;
+        width: 16rem;
+        margin-left: 12rem;
+        margin-top: 25rem;
+    }
+    .gallery {
+        width: 20vw;
+        margin-left: 3rem;
+    }
+}
+
