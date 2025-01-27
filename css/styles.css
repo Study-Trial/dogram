@@ -1,18 +1,135 @@
-body {
-    margin: 0;
+
+html {
+    /* position: relative; */
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    margin: 0px;
 }
-  
-div {
-    margin: 30px;
-    text-align: center;
-    font-family: "Oi", serif;
-    font-size: 6rem;
-    text-transform: uppercase;
-    background-image: url(https://ie.wampi.ru/2023/10/10/gepard.jpg);
-    color:transparent;
-    line-height: 1;
-    -webkit-background-clip: text;
+body {
+    background: url(../images/constellation.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: 0 -100px;
-    background-size: 10em;
+}
+h2 {
+    margin: 0px;
+    font-size: 4.5rem;
+    text-align: center;
+    color: blanchedalmond;
+}
+.gallery--item_image {
+    display:block;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+}
+.detailed_image {
+    width: 12rem;
+    height: 12rem;
+    font-size: 0;
+    object-fit: cover;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.detailed_title {
+    display: block;
+    text-align: center;
+    background-color: blanchedalmond;
+    margin-bottom: 0.5rem;
+}
+.detailed_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery{
+    list-style: none;
+    overflow: scroll;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0px;
+}
+.gallery--item:hover {
+    filter: blur(5px);
+}
+.detailed_container:hover {
+    filter: blur(5px);
+}
+.gallery--item_title {
+    display: block;
+    width: 7rem;
+    font-size: 2.5 rem;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.gallery--item {
+    display: flex;
+    border: 3px solid blanchedalmond;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 7rem;
+    margin: 5px 0 5px 0;
+}
+@media screen and (min-width: 480px) {
+
+    .detailed_container {
+        position: absolute;
+        width: 19rem;
+        height: 19rem;
+        margin-top: 1rem;
+        margin-left: 33vw;
+    }
+    .detailed_image {
+        width: 19rem;
+        height: 19rem;
+    }
+    .detailed_title {
+        width: 7.4rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0px;
+    }
+    .gallery--item {
+        justify-content:space-around;
+        width: 7rem;
+        overflow: hidden;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .gallery {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+    }
+}
+@media screen and (min-width: 850px) {
+
+    .detailed_container {
+        margin: 10vh 0 0 45vw;
+    }
+    .detailed_image {
+        width: 40rem;
+        height: 25rem;
+    }
+    .detailed_title {
+        position: absolute;
+        width: 16rem;
+        height: 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 28rem;
+        padding: 0px;
+    }
+    .gallery {
+        width: 20vw;
+        margin-left: 3rem;
+    }
 }
