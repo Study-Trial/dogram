@@ -1,7 +1,5 @@
 
 html {
-    /* position: relative; */
-    font-size: 62,5%;
     scroll-behavior: smooth;
     margin: 0px;
 }
@@ -11,11 +9,15 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-h2 {
+.logo {
     margin: 0px;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-align: center;
     color: blanchedalmond;
+    font-family: 'lakeshoredriveregular', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 10px 10px 10px black;
 }
 .gallery--item_image {
     display:block;
@@ -31,11 +33,21 @@ h2 {
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-.detailed_title {
+.detailedContainer--title {
     display: block;
-    text-align: center;
     background-color: blanchedalmond;
     margin-bottom: 0.5rem;
+    width: 12rem;
+    line-height: 1;
+    padding-bottom: 0.4rem;
+    font-family: 'airstream_nfregular', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-wrap: pretty;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .detailed_container {
     display: flex;
@@ -59,15 +71,18 @@ h2 {
 .gallery--item:hover {
     filter: blur(5px);
 }
-.detailed_container:hover {
+.detailed_image:hover {
     filter: blur(5px);
 }
 .gallery--item_title {
     display: block;
     width: 7rem;
-    font-size: 2.5 rem;
     text-align: center;
     background-color: blanchedalmond;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .gallery--item {
     display: flex;
@@ -75,6 +90,7 @@ h2 {
     border-radius: 30px;
     overflow: hidden;
     width: 7rem;
+    height: fit-content;
     margin: 5px 0 5px 0;
 }
 @media screen and (min-width: 480px) {
@@ -82,19 +98,22 @@ h2 {
     .detailed_container {
         position: absolute;
         width: 19rem;
-        height: 19rem;
         margin-top: 1rem;
         margin-left: 33vw;
+    }
+
+    .detailedContainer--title:hover {
+        white-space: normal;
+        text-overflow: clip;
+        overflow: visible;
     }
     .detailed_image {
         width: 19rem;
         height: 19rem;
     }
-    .detailed_title {
-        width: 7.4rem;
+    .detailedContainer--title {
+        width: 19rem;
         font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 0px;
     }
     .gallery--item {
         justify-content:space-around;
@@ -104,7 +123,6 @@ h2 {
         margin-left: 1rem;
     }
     .gallery {
-        position: relative;
         display: flex;
         flex-direction: row;
         width: 30vw;
@@ -113,23 +131,17 @@ h2 {
 @media screen and (min-width: 850px) {
 
     .detailed_container {
-        margin: 10vh 0 0 45vw;
+        margin: 2vh 0 0 45vw;
     }
     .detailed_image {
         width: 40rem;
         height: 25rem;
     }
-    .detailed_title {
-        position: absolute;
-        width: 16rem;
-        height: 3rem;
-        font-size: 2rem;
-        line-height: 3rem;
-        margin-top: 28rem;
-        padding: 0px;
+    .detailedContainer--title {
+        width: 40rem;
     }
     .gallery {
-        width: 20vw;
+        width: 25vw;
         margin-left: 3rem;
     }
 }
