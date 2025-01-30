@@ -1,7 +1,14 @@
 
+.animate__animated.animate__backInRight {
+    animation-delay: 0.1s;
+    animation-duration: 2s;
+}
+
+
 html {
     scroll-behavior: smooth;
     margin: 0px;
+    overflow-x: hidden;
 }
 body {
     background: url(../images/constellation.svg);
@@ -11,7 +18,7 @@ body {
 }
 .logo {
     margin: 0px;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
     text-align: center;
     color: blanchedalmond;
     font-family: 'lakeshoredriveregular', sans-serif;
@@ -60,11 +67,12 @@ body {
 .gallery{
     list-style: none;
     overflow: scroll;
+    overflow-x: hidden;
     height: 75vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0px;
 }
@@ -78,11 +86,15 @@ body {
     display: block;
     width: 7rem;
     text-align: center;
+    text-wrap: pretty;
+    line-height: 1.5;
+    padding-top: 0.2rem;
     background-color: blanchedalmond;
     font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-style: normal;
+    height: 2.5rem;
 }
 .gallery--item {
     display: flex;
@@ -90,8 +102,10 @@ body {
     border-radius: 30px;
     overflow: hidden;
     width: 7rem;
-    height: fit-content;
     margin: 5px 0 5px 0;
+    cursor: pointer;
+    height: fit-content;
+    
 }
 @media screen and (min-width: 480px) {
 

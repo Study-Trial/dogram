@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fonts/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>dogram</title>
   </head>
   <body>
@@ -18,12 +25,14 @@
       <img
         src="/images/German-Shepherd-dog-Alsatian.webp"
         alt=""
-        class="detailed_image"
+        class="detailed_image animate__animated animate__backInRight"
+        id="id_detailed_image"
       /><span class="detailedContainer--title"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-        repudiandae culpa saepe itaque consequuntur provident ab vitae neque
-        eligendi quasi quod corporis reiciendis esse quisquam quaerat quam eos,
-        assumenda est.</span
+        >The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and
+        versatile breed originally developed in Germany for herding and guarding
+        livestock. They are widely used in police, military, and
+        search-and-rescue work due to their trainability and strong work
+        ethic.</span
       >
     </div>
     <ul class="gallery">
@@ -33,7 +42,8 @@
             src="/images/Golden+Retrievers+dans+pet+care.jpeg"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">docile dog</span>
+            data-detailed-text="Golden Retrievers are friendly, intelligent, and affectionate dogs known for their golden coats and playful personalities. Originally bred as hunting dogs in Scotland, they excel in retrieving game from water and land. They are highly trainable, making them great family pets, service dogs, and therapy animals."
+          /><span class="gallery--item_title">Golden Retriever</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -42,7 +52,8 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -51,7 +62,8 @@
             src="/images/AdobeStock64835449.jpeg"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">observant dog</span>
+            data-detailed-text="Bernese Mountain Dogs are great family companions, known for their friendly nature and striking appearance. They were originally bred as working dogs in the Swiss Alps, making them strong and resilient."
+          /><span class="gallery--item_title">Bernese Mountain Dog</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -60,7 +72,8 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -69,7 +82,8 @@
             src="/images/Beagle-laying-down-indoors.jpg"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">calm dog</span>
+            data-detailed-text="Beagles are small, energetic dogs known for their friendly and affectionate nature. They are often used as hunting dogs and are known for their distinctive long ears and floppy ears."
+          /><span class="gallery--item_title">Beagle</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -78,7 +92,8 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -87,7 +102,8 @@
             src="/images/yorkshire-terrier-dog-sitting-close-up-on-nature-royalty-free-image-1682308117.avif"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">curious dog</span>
+            data-detailed-text="Yorkshire Terriers are small, feisty dogs known for their bold and spirited nature. They are often used as companion dogs and are known for their distinctive long, silky coats and distinctive personalities."
+          /><span class="gallery--item_title">Yorkshire Terrier</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -96,7 +112,8 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -105,7 +122,8 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
       <li class="gallery--item">
@@ -114,9 +132,11 @@
             src="/images/German-Shepherd-dog-Alsatian.webp"
             alt=""
             class="gallery--item_image"
-          /><span class="gallery--item_title">serious dog</span>
+            data-detailed-text="The German Shepherd Dog (Alsatian) is a highly intelligent, loyal, and versatile breed originally developed in Germany for herding and guarding livestock. They are widely used in police, military, and search-and-rescue work due to their trainability and strong work ethic."
+          /><span class="gallery--item_title">German Shepherd</span>
         </div>
       </li>
     </ul>
+    <script src="src/script.js"></script>
   </body>
 </html>
